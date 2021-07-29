@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2021 at 03:00 PM
+-- Generation Time: Jul 29, 2021 at 03:17 PM
 -- Server version: 5.6.37
 -- PHP Version: 5.6.31
 
@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `committees`
 --
 
+DROP TABLE IF EXISTS `committees`;
 CREATE TABLE IF NOT EXISTS `committees` (
   `committeeID` int(11) NOT NULL,
   `committeeName` varchar(45) NOT NULL,
@@ -38,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `committees` (
 -- Table structure for table `contact_us`
 --
 
+DROP TABLE IF EXISTS `contact_us`;
 CREATE TABLE IF NOT EXISTS `contact_us` (
   `id` int(11) NOT NULL,
   `firstname` varchar(45) NOT NULL,
@@ -52,6 +54,7 @@ CREATE TABLE IF NOT EXISTS `contact_us` (
 -- Table structure for table `crew`
 --
 
+DROP TABLE IF EXISTS `crew`;
 CREATE TABLE IF NOT EXISTS `crew` (
   `id` int(11) NOT NULL,
   `name` varchar(45) NOT NULL,
@@ -66,6 +69,7 @@ CREATE TABLE IF NOT EXISTS `crew` (
 -- Table structure for table `participants`
 --
 
+DROP TABLE IF EXISTS `participants`;
 CREATE TABLE IF NOT EXISTS `participants` (
   `participantId` int(20) NOT NULL,
   `participantName` varchar(45) NOT NULL,
